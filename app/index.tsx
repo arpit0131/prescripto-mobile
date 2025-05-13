@@ -9,7 +9,7 @@ export default function Index() {
         alignItems: 'center',
       }}
     >
-      <Text>Prescripto</Text>
+      <Text className='text-green-400 font-bold text-3xl'>Prescripto</Text>
     </View>
   );
 }
