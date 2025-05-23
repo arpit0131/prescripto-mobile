@@ -28,6 +28,7 @@ import doc8 from './doc8.png';
 import doc9 from './doc9.png';
 import doctor from './doctor.png';
 import dropdown_icon from './dropdown_icon.svg';
+import email from './email.png';
 import group_profiles from './group_profiles.png';
 import header_img from './header_img.png';
 import home from './home.png';
@@ -63,6 +64,7 @@ export const assets = {
   about,
   doctor,
   phone,
+  email,
 };
 
 export const specialityData = [

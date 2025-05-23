@@ -13,14 +13,13 @@ const TopDoctor = ({
   return (
     <TouchableOpacity
       key={Index}
-      style={{ width: '50%', height: '100%' }}
+      style={{ width: '48%', height: '100%' }}
       onPress={() => navigation.navigate(`/appointment/${itemId}`)}
       className='border border-blue-200 rounded-xl overflow-hidden mb-4 active:scale-95 transition-all duration-300'
     >
       <Image
-        // source={{ uri: String(docImage) }}
         source={docImage}
-        className='w-full h-40 bg-blue-50'
+        className='w-full h-52 bg-blue-50'
         resizeMode='cover'
       />
       <View className='p-4'>
@@ -28,7 +27,7 @@ const TopDoctor = ({
           <View className='w-2 h-2 bg-green-500 rounded-full' />
           <Text className='text-green-500 text-sm'>Available</Text>
         </View>
-        <Text className='text-gray-900 text-lg font-medium'>{docName}</Text>
+        <Text className='text-gray-900 font-medium'>{docName}</Text>
         <Text className='text-gray-600 text-sm'>{docSpeciality}</Text>
       </View>
     </TouchableOpacity>

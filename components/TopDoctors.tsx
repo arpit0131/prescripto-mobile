@@ -1,7 +1,7 @@
 import { doctors } from '@/assets/assets_frontend/assets';
 import { useNavigation } from 'expo-router';
 import React from 'react';
-import { FlatList, Text, View } from 'react-native';
+import { FlatList, Text, TouchableOpacity, View } from 'react-native';
 import TopDoctor from './TopDoctor';
 
 const TopDoctors = () => {
@@ -27,15 +27,21 @@ const TopDoctors = () => {
         numColumns={2}
         columnWrapperStyle={{
           justifyContent: 'space-between',
-          marginBottom: 16,
         }}
         contentContainerStyle={{
           paddingHorizontal: 12,
           paddingTop: 12,
           paddingBottom: 20,
+          gap: 10,
         }}
         showsVerticalScrollIndicator={false}
       />
+      <TouchableOpacity
+        onPress={() => navigation.navigate('/doctors')}
+        className='bg-white text-black border border-black mb-10 px-12 py-3 rounded-full'
+      >
+        <Text className='font-semibold'>More Doctors</Text>
+      </TouchableOpacity>
     </View>
   );
 };
