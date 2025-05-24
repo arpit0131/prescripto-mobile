@@ -59,6 +59,7 @@ const _layout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name='allDoctors'
         options={{
@@ -69,6 +70,7 @@ const _layout = () => {
           ),
         }}
       />
+
       <Tabs.Screen
         name='contact'
         options={{
